@@ -104,6 +104,33 @@ svg { width: 2.3rem; }
     border-color: var(--soft-magenta);
 }
 
+@media (max-width: 720px) {
+    body { background-image: url(../images/bg-mobile.svg); }
+    body, main { height: auto; }
+    main { align-items: center; }
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero, .information, .header { width: 85%; }
+    .hero-image { max-height: 30rem; }
+    .header {
+        width: 15rem;
+        margin: 3rem 0 0 -48%;
+    }
+    .title { font-size: 2.6rem; }
+    .information {
+        text-align: center;
+        margin: 0;
+    }
+    .btn { padding: 1.5rem 6.5rem; }
+    .social-media {
+        margin: 4rem;
+        width: 18rem;
+        justify-content: space-between;
+    }
+    .social-media a { margin: 0; }
+}
 
 
 
