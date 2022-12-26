@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+
+    --principal-font: 'Poppins', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+} 
+
+/* GLOBALS */
+html  {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after { box-sizing: inherit; }
+body {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: var(--principal-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--violet);
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    color: white;
+}
+img { max-width: 100%; }
+h1, p { margin: 0; }
+
+/* UTILITIES */
+.container { max-width: 128rem; }
+.flex { display: flex; }
+
+/* MAIN */
+main {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+.header { width: 23rem; }
+
+/* MAIN CONTENT */
+.main-content { margin-top: 7rem; }
+
+/* HERO */
+.hero { width: 60%; }
+.hero-image {
+    background-image: url(../images/illustration-mockups.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 55rem;
+}
+
+/* INFORMATION */
+.information {
+    margin: 4rem 0 0 4rem;
+    width: 37%;
+}
+.title { font-size: 3.9rem; }
+.information-p {
+    margin-top: 2rem;
+    font-size: 1.65rem;
+    color: rgb(220, 220, 220);
+    font-family: var(--secondary-font);
+}
+.btn {
+    border: none;
+    margin-top: 2.3rem;
+    padding: 1.7rem 5.5rem;
+    background-color: white;
+    color: var(--violet);
+    border-radius: 3rem;
+    font-weight: 600;
+    box-shadow: 0px 3px 3px 3px rgba(57, 57, 57, 0.2);
+    transition: all .3s ease;
+}
+.btn:hover {
+    background-color: var(--soft-magenta);
+    color: white;
+}
+
+/* SOCIAL MEDIA */
+.social-media { justify-content: flex-end; }
+.social-media a {
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    fill: white;
+    transition: all .3s ease;
+}
+svg { width: 2.3rem; }
+.social-media a:is(:hover, :focus-visible) {
+    fill: var(--soft-magenta);
+    border-color: var(--soft-magenta);
+}
+
+
+
+
+
